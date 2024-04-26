@@ -36,3 +36,157 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  background: grey;
+}
+@keyframes anim{
+  0% {
+    transform: rotate(3deg) scale(1, 1);
+  }
+  25% {
+    transform: rotate(20deg) scale(1, 0.95);
+  }
+  50% {
+    transform: rotate(-30deg) scale(1, 1);
+  }
+  75% {
+    transform: rotate(0deg) scale(1, 0.95);
+  }
+  100% {
+    transform: rotate(3deg) scale(1, 1);
+  }
+}
+@keyframes anim2{
+  0% {
+    transform: rotate(3deg) scale(1, 1);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.10, 1.10);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1, 1);
+  }
+  75% {
+    transform: rotate(0deg) scale(1, 1.0.6);
+  }
+  100% {
+    transform: rotate(3deg) scale(1, 1);
+  }
+}
+.principal {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.principal2 {
+  position: fixed;
+  background: grey;
+  width: 100%;
+  z-index: 2;
+}
+.menu2-principal {
+  position: relative;
+  background: burlywood;
+}
+.poke {
+  width: 100%;
+  max-height: 100vh;
+  flex-direction: column;
+  z-index: -2;
+}
+.unico {
+  position: relative;
+  margin-bottom: 70px;
+  top: 30px;
+  border-radius: 10px;
+  animation-name: anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(10px 2px 0px rgba(0, 0, 0, 0.2));
+}
+.unico2 {
+  position: relative;
+  top: 60px;
+  border-radius: 10px;
+  animation-name: anim2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(10px 15px 2px rgba(0, 0, 0, 0.2));
+}
+button{
+  border: none;
+  background: none;
+}
+.texto {
+  position: relative;
+  top: -20px;
+  font-size: 17px;
+  color: bisque;
+}
+.texto2 {
+  margin-top: 80px;
+  left: 10px;
+  font-size: 30px;
+  color: whitesmoke;
+}
+.Pokemones {
+  position: relative;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px aqua;
+  margin-right: 10px;
+  background: crimson;
+  border: solid 3px grey;
+  top: 90px;
+}
+.botones {
+  position:fixed;
+  margin-top: -80px;
+  background: grey;
+  width: 100%;
+  height: 80px;
+}
+.alini {
+  position: relative;
+  top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.face {
+  position: relative;
+  background:none;
+  border: none;
+  left: 15%;
+}
+.pika:hover{
+  image-orientation: flip;
+  transition: 4s;
+  border-radius:50%;
+  box-shadow: 0px -4px 6px 5px aqua;
+}
+.twi {
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.coches:hover{
+  image-orientation: flip;
+  transition: 4s;
+  border-radius:50%;
+  box-shadow: 0px -4px 6px 5px aqua;
+}
+.store {
+  position: relative;
+  border: none;
+  background: none;
+  right: 15%;
+}
+.cine:hover{
+  image-orientation: flip;
+  transition: 4s;
+  border-radius:50%;
+  box-shadow: 0px -4px 6px 5px aqua;
+}
