@@ -136,7 +136,6 @@ button{
 .texto2 {
   position: relative;
   margin-top: 120px;
-  left: 10px;
   font-size: 27px;
   font-weight: bolder;
   font-family: 'Courier New', Courier, monospace;
@@ -146,17 +145,11 @@ button{
   position: relative;
   background:antiquewhite;
   box-shadow: 0px 0px 6px 5px antiquewhite;
-  left: 30px;
-  width: 380px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .llista-pokemones {
   position: relative;
   padding-block-end: 170px;
-}
-.types {
-  position: relative;
-  text-align: justify;
 }
 .Pokemones {
   position: relative;
@@ -222,10 +215,23 @@ button{
 
 
 .grass {
-  color: green;
-  background: greenyellow;
+  color: lawngreen;
+  background: darkgreen;
+  border-radius: 20px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 0px 5px 5px limegreen;
+  padding-top: 0;
 }
 
 .poison {
-  color: purple;
+  color: violet;
+  background: purple;
+  border-radius: 10px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 0px 5px 5px mediumpurple;
+  padding-top: 0;
 }

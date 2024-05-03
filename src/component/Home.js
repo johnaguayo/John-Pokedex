@@ -65,7 +65,7 @@ const Home = (props) => {
                                             </div>
                                             <div className="">
                                                 {pokemon.types.map((type, index) => (
-                                                    <span style={{position:"relative",marginLeft:"40px",fontSize:"x-large",top:"20px"}} className={type}>{type}</span>
+                                                    <span style={{position:"relative",marginLeft:"20px",fontSize:"x-large",top:"20px"}} className={type}>{type}</span>
                                                 ))}
                                             </div>
                                             <div style={{position:"relative",display:"flex",top:"30px"}}>
