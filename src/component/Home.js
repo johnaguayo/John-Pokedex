@@ -57,22 +57,24 @@ const Home = (props) => {
                                 <button><img className="unico" width={"80px"} height={"80px"} src={pokemon.img} alt={pokemon.name}></img></button>
                                 <h3 className="texto">{pokemon.name}</h3>
                                 <div className='menu2-principal' style={{height:(menuAbierto == pokemon?.id ? '1000px':"0px"), transition:'height 1s ease-in-out',borderRadius: '20px'}}>
-                                    <img className="unico2" width={"200px"} height={"200px"} src={pokemon.img} alt={pokemon.name}></img>
-                                    <div className="alinea">
-                                        <div className="types">
-                                            <div className="nom">
-                                                <div className="texto2">Nom : {pokemon.name}</div>
-                                            </div>
-                                            <div className="">
-                                                {pokemon.types.map((type, index) => (
-                                                    <span style={{position:"relative",marginLeft:"40px",fontSize:"x-large",top:"20px",right:"20px"}} className={type}>{type}</span>
-                                                ))}
-                                            </div>
-                                            <div style={{position:"relative",display:"flex",top:"30px"}}>
-                                                <img style={{position:"relative",left:"5px"}} src={pokemon.imagenes.front_default} />
-                                                <img style={{position:"relative",left:"-10px"}} src={pokemon.imagenes.back_default} />
-                                                <img style={{position:"relative",left:"-20px"}} src={pokemon.imagenes.front_shiny} />
-                                                <img style={{position:"relative",left:"-30px"}} src={pokemon.imagenes.back_shiny} />
+                                    <div className="retrato">
+                                        <img className="unico2" width={"200px"} height={"200px"} src={pokemon.img} alt={pokemon.name}></img>
+                                        <div className="alinea">
+                                            <div className="types">
+                                                <div className="nom">
+                                                    <div className="texto2">Nom : {pokemon.name}</div>
+                                                </div>
+                                                <div className="typs">
+                                                    {pokemon.types.map((type, index) => (
+                                                        <span style={{position:"relative",marginLeft:"40px",fontSize:"x-large",top:"20px",right:"25px"}} className={type}>{type}</span>
+                                                    ))}
+                                                </div>
+                                                <div style={{position:"relative",display:"flex",top:"30px",left:"15px"}}>
+                                                    <img style={{position:"relative",left:"5px",filter:"drop-shadow(0px 3px 1px rgba(255, 228, 196))"}} src={pokemon.imagenes.front_default} />
+                                                    <img style={{position:"relative",left:"-10px",filter:"drop-shadow(0px 3px 1px rgba(255, 228, 196))"}} src={pokemon.imagenes.back_default} />
+                                                    <img style={{position:"relative",left:"-20px",filter:"drop-shadow(0px 3px 1px rgba(255, 228, 196))"}} src={pokemon.imagenes.front_shiny} />
+                                                    <img style={{position:"relative",left:"-30px",filter:"drop-shadow(0px 3px 1px rgba(255, 228, 196))"}} src={pokemon.imagenes.back_shiny} />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
