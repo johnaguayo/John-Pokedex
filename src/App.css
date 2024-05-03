@@ -39,7 +39,7 @@
 
 body {
   margin: 0;
-  background: grey;
+  background: cadetblue;
 }
 @keyframes anim{
   0% {
@@ -82,7 +82,7 @@ body {
 }
 .principal2 {
   position: fixed;
-  background: grey;
+  background: teal;
   width: 100%;
   z-index: 2;
 }
@@ -108,7 +108,7 @@ body {
 }
 .unico2 {
   position: relative;
-  top: 60px;
+  top: 80px;
   border-radius: 10px;
   animation-name: anim2;
   animation-duration: 5s;
@@ -123,28 +123,57 @@ button{
   position: relative;
   top: -20px;
   font-size: 17px;
-  color: bisque;
+  color: black;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.alinea {
+  position: relative;
+  display: flex ;
+  justify-content: center;
+
 }
 .texto2 {
-  margin-top: 80px;
+  position: relative;
+  margin-top: 120px;
   left: 10px;
-  font-size: 30px;
-  color: whitesmoke;
+  font-size: 27px;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  color: indigo;
+} 
+.nom {
+  position: relative;
+  background:antiquewhite;
+  box-shadow: 0px 0px 6px 5px antiquewhite;
+  left: 30px;
+  width: 380px;
+  border-radius: 20px;
+}
+.llista-pokemones {
+  position: relative;
+  padding-block-end: 170px;
+}
+.types {
+  position: relative;
+  text-align: justify;
 }
 .Pokemones {
   position: relative;
   margin-left: 10px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 5px aqua;
+  box-shadow: 0px 5px 10px 6px aqua;
   margin-right: 10px;
-  background: crimson;
+  background: paleturquoise;
   border: solid 3px grey;
   top: 90px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 .botones {
   position:fixed;
   margin-top: -80px;
-  background: grey;
+  background: teal;
   width: 100%;
   height: 80px;
 }
@@ -189,4 +218,13 @@ button{
   transition: 4s;
   border-radius:50%;
   box-shadow: 0px -4px 6px 5px aqua;
+}
+
+
+.grass {
+  color: green;
+}
+
+.poison {
+  color: purple;
 }
